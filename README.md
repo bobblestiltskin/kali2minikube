@@ -1,7 +1,9 @@
 # kali2minikube
-A script to install minikube and dependencies on a vanilla kali raspberry pi 5 installation.
+A script (apt.sh) to install minikube and dependencies on a vanilla kali raspberry pi 5 installation.
 
-Also provided a script to install hello-minikube and one to install mongodb.
+Also a script (hello.sh) to install hello-minikube and one to install mongodb (mongodb.sh).
+
+I have not run the scripts as is yet, I have cut'n'pasted each line.
 
 
 
