@@ -2,6 +2,8 @@
 set -xu
 ./install_mongodb_helm.sh
 
+sudo apt install -y mongodb-clients
+
 minikube kubectl get all
 minikube kubectl describe deployment.apps/mongodb
 
@@ -13,5 +15,3 @@ minikube kubectl logs pod/${MONGO_POD}
 minikube kubectl expose deployment mongodb --type=NodePort --port=27017
 minikube kubectl port-forward svc/mongodb 27017:27017 &
 minikube kubectl get all
-
-sudo apt install -y mongodb-clients
