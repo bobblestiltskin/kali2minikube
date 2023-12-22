@@ -9,15 +9,15 @@ to install the image to the SD card.
 
 Check for the correct location using lsblk !! - mine was at /dev/sdg.
 
-run install1.sh e.g. 
+The following scripts can be viewed in https://github.com/bobblestiltskin/kali2minikube/tree/main/bin  
 
-$ ./install1.sh | tee install1.log
+or cloned at https://github.com/bobblestiltskin/kali2minikube
 
-$ sudo usermod -aG docker $USER && newgrp docker
+1. run install1.sh e.g. $ ./install1.sh | tee install1.log
 
-$ ./install3.sh | tee install3.log
+2. $ sudo usermod -aG docker $USER && newgrp docker
 
-to install minikube
+3. $ ./install3.sh | tee install3.log to install minikube
 
 and then optionally
 
