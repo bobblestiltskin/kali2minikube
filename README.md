@@ -5,11 +5,20 @@ I used
 
 dd if=./new/kali-linux-2023.4-raspberry-pi5-arm64.img of=/dev/sdg bs=64M conv=sync
 
-to install the image to the SD card. dd is sometimes called 'Disk Destroyer'.
+to install the image to the SD card. check for the correct location using lsblk - mine was at /dev/sdg.
 
-Also a script (hello.sh) to install hello-minikube and one to install mongodb (mongodb.sh).
+run install1.sh e.g. 
 
-I have not run the scripts as is yet, I have cut'n'pasted each line.
+$ ./install1.sh | tee install1.log
 
+cat install2.sh
 
+$ sudo usermod -aG docker $USER && newgrp docker
 
+$./install3.sh | tee install3.log
+
+to install minikube
+
+and then optionally
+
+$./mongodb.sh | tee mongodb.log
