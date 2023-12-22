@@ -18,6 +18,7 @@ or cloned at https://github.com/bobblestiltskin/kali2minikube
    e.g. $ ./install1.sh | tee install1.log
 
   install1.sh contains
+
   ```
 #!/bin/bash
 set -xu
@@ -28,7 +29,9 @@ sudo apt install -y software-properties-common apt-transport-https ca-certificat
 3. $ sudo usermod -aG docker $USER && newgrp docker
 
 4. $ ./install3.sh | tee install3.log to install minikube
-  install3.sh contains
+
+install3.sh contains
+
 ```
 #!/bin/bash
 set -xu
@@ -51,4 +54,35 @@ $ ./mongodb.sh | tee mongodb.log
 
 to install mongodb.
 
-The script, mongodb.sh, could be easily changed to install any of the other bitnami packages. 
+where mongodb.sh contains 
+```
+#/bin/bash
+set -xu
+./install_mongodb_helm.sh
+
+sudo apt install -y mongodb-clients
+
+minikube kubectl get all
+minikube kubectl describe deployment.apps/mongodb
+
+MONGO_POD=$(minikube kubectl get pods | grep ^mongodb | awk '{print $1}')
+echo MONGO POD IS ${MONGO_POD}
+minikube kubectl describe pod/${MONGO_POD}
+minikube kubectl logs pod/${MONGO_POD}
+
+minikube kubectl expose deployment mongodb --type=NodePort --port=27017
+minikube service mongodb --url
+minikube kubectl port-forward svc/mongodb 27017:27017 &
+minikube kubectl get all
+```
+and the component install_mongodb_helm.sh contains
+``` 
+#/bin/bash
+set -xu
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm search repo bitnami
+helm install mongodb bitnami/mongodb  --set image.repository=arm64v8/mongo --set image.tag=latest --set persistence.mountPath=/data/db
+helm ls
+```
+
+The script, install_mongodb_helm.sh, could be easily changed to install any of the other bitnami packages. 
