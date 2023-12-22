@@ -13,5 +13,6 @@ minikube kubectl describe pod/${MONGO_POD}
 minikube kubectl logs pod/${MONGO_POD}
 
 minikube kubectl expose deployment mongodb --type=NodePort --port=27017
+minikube service mongodb --url
 minikube kubectl port-forward svc/mongodb 27017:27017 &
 minikube kubectl get all

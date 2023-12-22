@@ -1,0 +1,528 @@
+"bitnami" has been added to your repositories
+NAME                                        	CHART VERSION	APP VERSION  	DESCRIPTION                                       
+bitnami/airflow                             	16.1.7       	2.7.3        	Apache Airflow is a tool to express and execute...
+bitnami/apache                              	10.2.4       	2.4.58       	Apache HTTP Server is an open-source HTTP serve...
+bitnami/apisix                              	2.2.7        	3.7.0        	Apache APISIX is high-performance, real-time AP...
+bitnami/appsmith                            	2.1.12       	1.9.57       	Appsmith is an open source platform for buildin...
+bitnami/argo-cd                             	5.2.10       	2.9.3        	Argo CD is a continuous delivery tool for Kuber...
+bitnami/argo-workflows                      	6.1.4        	3.5.1        	Argo Workflows is meant to orchestrate Kubernet...
+bitnami/aspnet-core                         	5.0.1        	8.0.0        	ASP.NET Core is an open-source framework for we...
+bitnami/cassandra                           	10.6.8       	4.1.3        	Apache Cassandra is an open source distributed ...
+bitnami/cert-manager                        	0.13.5       	1.13.3       	cert-manager is a Kubernetes add-on to automate...
+bitnami/clickhouse                          	4.1.14       	23.11.3      	ClickHouse is an open-source column-oriented OL...
+bitnami/common                              	2.14.1       	2.14.1       	A Library Helm Chart for grouping common logic ...
+bitnami/concourse                           	3.0.14       	7.11.0       	Concourse is an automation system written in Go...
+bitnami/consul                              	10.14.5      	1.17.0       	HashiCorp Consul is a tool for discovering and ...
+bitnami/contour                             	15.0.1       	1.27.0       	Contour is an open source Kubernetes ingress co...
+bitnami/contour-operator                    	4.2.1        	1.24.0       	DEPRECATED The Contour Operator extends the Kub...
+bitnami/dataplatform-bp2                    	12.0.5       	1.0.1        	DEPRECATED This Helm chart can be used for the ...
+bitnami/deepspeed                           	1.3.5        	0.12.3       	DeepSpeed is deep learning software suite for e...
+bitnami/discourse                           	12.1.0       	3.1.3        	Discourse is an open source discussion platform...
+bitnami/dokuwiki                            	14.3.2       	20230404.1.0 	DokuWiki is a standards-compliant wiki optimize...
+bitnami/drupal                              	17.0.0       	10.2.0       	Drupal is one of the most versatile open source...
+bitnami/ejbca                               	11.0.1       	8.2.0-1      	EJBCA is an enterprise class PKI Certificate Au...
+bitnami/elasticsearch                       	19.13.14     	8.11.3       	Elasticsearch is a distributed search and analy...
+bitnami/etcd                                	9.8.0        	3.5.11       	etcd is a distributed key-value store designed ...
+bitnami/external-dns                        	6.28.6       	0.14.0       	ExternalDNS is a Kubernetes addon that configur...
+bitnami/flink                               	0.5.2        	1.18.0       	Apache Flink is a framework and distributed pro...
+bitnami/fluent-bit                          	0.6.5        	2.2.1        	Fluent Bit is a Fast and Lightweight Log Proces...
+bitnami/fluentd                             	5.9.12       	1.16.3       	Fluentd collects events from various data sourc...
+bitnami/flux                                	1.2.0        	1.1.2        	Source Controller is a component of Flux. Flux ...
+bitnami/geode                               	1.1.8        	1.15.1       	DEPRECATED Apache Geode is a data management pl...
+bitnami/ghost                               	19.6.16      	5.75.2       	Ghost is an open source publishing platform des...
+bitnami/gitea                               	1.2.9        	1.21.3       	Gitea is a lightweight code hosting solution. W...
+bitnami/grafana                             	9.6.5        	10.2.2       	Grafana is an open source metric analytics and ...
+bitnami/grafana-loki                        	2.11.20      	2.9.3        	Grafana Loki is a horizontally scalable, highly...
+bitnami/grafana-mimir                       	0.7.8        	2.10.5       	Grafana Mimir is an open source, horizontally s...
+bitnami/grafana-operator                    	3.5.11       	5.6.0        	Grafana Operator is a Kubernetes operator that ...
+bitnami/grafana-tempo                       	2.5.8        	2.3.1        	Grafana Tempo is a distributed tracing system t...
+bitnami/haproxy                             	0.11.0       	2.9.1        	HAProxy is a TCP proxy and a HTTP reverse proxy...
+bitnami/haproxy-intel                       	0.2.11       	2.7.1        	DEPRECATED HAProxy for Intel is a high-performa...
+bitnami/harbor                              	19.2.3       	2.10.0       	Harbor is an open source trusted cloud-native r...
+bitnami/influxdb                            	5.11.1       	2.7.4        	InfluxDB(TM) is an open source time-series data...
+bitnami/jaeger                              	1.5.4        	1.52.0       	Jaeger is a distributed tracing system. It is u...
+bitnami/jasperreports                       	18.0.0       	8.2.0        	JasperReports Server is a stand-alone and embed...
+bitnami/jenkins                             	12.4.8       	2.426.2      	Jenkins is an open source Continuous Integratio...
+bitnami/joomla                              	18.0.0       	5.0.1        	Joomla! is an award winning open source CMS pla...
+bitnami/jupyterhub                          	5.2.9        	4.0.2        	JupyterHub brings the power of notebooks to gro...
+bitnami/kafka                               	26.6.1       	3.6.1        	Apache Kafka is a distributed streaming platfor...
+bitnami/keycloak                            	17.3.6       	22.0.5       	Keycloak is a high performance Java-based ident...
+bitnami/kiam                                	1.4.10       	4.2.0        	kiam is a proxy that captures AWS Metadata API ...
+bitnami/kibana                              	10.6.7       	8.11.3       	Kibana is an open source, browser based analyti...
+bitnami/kong                                	10.2.0       	3.4.2        	Kong is an open source Microservice API gateway...
+bitnami/kube-prometheus                     	8.22.8       	0.70.0       	Prometheus Operator provides easy monitoring de...
+bitnami/kube-state-metrics                  	3.8.6        	2.10.1       	kube-state-metrics is a simple service that lis...
+bitnami/kubeapps                            	14.1.2       	2.9.0        	Kubeapps is a web-based UI for launching and ma...
+bitnami/kuberay                             	0.1.4        	1.0.0        	KubeRay is a Kubernetes operator for deploying ...
+bitnami/kubernetes-event-exporter           	2.10.1       	1.6.1        	Kubernetes Event Exporter makes it easy to expo...
+bitnami/logstash                            	5.6.9        	8.11.3       	Logstash is an open source data processing engi...
+bitnami/magento                             	25.0.0       	2.4.6        	Magento is a powerful open source e-commerce pl...
+bitnami/mariadb                             	15.0.1       	11.2.2       	MariaDB is an open source, community-developed ...
+bitnami/mariadb-galera                      	11.0.0       	11.2.2       	MariaDB Galera is a multi-primary database clus...
+bitnami/mastodon                            	3.2.7        	4.2.3        	Mastodon is self-hosted social network server b...
+bitnami/matomo                              	4.0.0        	4.16.0       	Matomo, formerly known as Piwik, is a real time...
+bitnami/mediawiki                           	18.0.1       	1.41.0       	MediaWiki is the free and open source wiki soft...
+bitnami/memcached                           	6.7.1        	1.6.22       	Memcached is an high-performance, distributed m...
+bitnami/metallb                             	4.8.0        	0.13.12      	MetalLB is a load-balancer implementation for b...
+bitnami/metrics-server                      	6.6.5        	0.6.4        	Metrics Server aggregates resource usage data, ...
+bitnami/milvus                              	5.1.5        	2.2.14       	Milvus is a cloud-native, open-source vector da...
+bitnami/minio                               	12.12.0      	2023.12.20   	MinIO(R) is an object storage server, compatibl...
+bitnami/mlflow                              	0.3.4        	2.9.2        	MLflow is an open-source platform designed to m...
+bitnami/mongodb                             	14.4.5       	7.0.4        	MongoDB(R) is a relational open source NoSQL da...
+bitnami/mongodb-sharded                     	7.1.6        	7.0.4        	MongoDB(R) is an open source NoSQL database tha...
+bitnami/moodle                              	20.0.1       	4.3.2        	Moodle(TM) LMS is an open source online Learnin...
+bitnami/multus-cni                          	1.1.10       	4.0.2        	Multus is a CNI plugin for Kubernetes clusters....
+bitnami/mxnet                               	3.5.2        	1.9.1        	DEPRECATED Apache MXNet (Incubating) is a flexi...
+bitnami/mysql                               	9.15.0       	8.0.35       	MySQL is a fast, reliable, scalable, and easy t...
+bitnami/nats                                	7.10.7       	2.10.7       	NATS is an open source, lightweight and high-pe...
+bitnami/nginx                               	15.5.1       	1.25.3       	NGINX Open Source is a web server that can be a...
+bitnami/nginx-ingress-controller            	9.9.5        	1.9.4        	NGINX Ingress Controller is an Ingress controll...
+bitnami/nginx-intel                         	2.1.15       	0.4.9        	DEPRECATED NGINX Open Source for Intel is a lig...
+bitnami/node                                	19.1.7       	16.18.0      	DEPRECATED Node.js is a runtime environment bui...
+bitnami/node-exporter                       	3.9.6        	1.7.0        	Prometheus exporter for hardware and OS metrics...
+bitnami/oauth2-proxy                        	4.3.6        	7.5.1        	A reverse proxy and static file server that pro...
+bitnami/odoo                                	25.0.4       	17.0.20231205	Odoo is an open source ERP and CRM platform, fo...
+bitnami/opencart                            	17.0.0       	4.0.2-3      	OpenCart is free open source ecommerce platform...
+bitnami/opensearch                          	0.6.1        	2.11.1       	OpenSearch is a scalable open-source solution f...
+bitnami/osclass                             	18.0.0       	8.2.0        	Osclass allows you to easily create a classifie...
+bitnami/owncloud                            	12.2.11      	10.11.0      	DEPRECATED ownCloud is an open source content c...
+bitnami/parse                               	21.1.6       	6.4.0        	Parse is a platform that enables users to add a...
+bitnami/phpbb                               	16.0.0       	3.3.11       	phpBB is a popular bulletin board that features...
+bitnami/phpmyadmin                          	13.1.3       	5.2.1        	phpMyAdmin is a free software tool written in P...
+bitnami/pinniped                            	1.4.4        	0.27.0       	Pinniped is an identity service provider for Ku...
+bitnami/postgresql                          	13.2.25      	16.1.0       	PostgreSQL (Postgres) is an open source object-...
+bitnami/postgresql-ha                       	12.3.4       	16.1.0       	This PostgreSQL cluster solution includes the P...
+bitnami/prestashop                          	20.0.0       	8.1.2        	PrestaShop is a powerful open source eCommerce ...
+bitnami/prometheus                          	0.5.1        	2.48.1       	Prometheus is an open source monitoring and ale...
+bitnami/pytorch                             	3.4.7        	2.1.2        	PyTorch is a deep learning platform that accele...
+bitnami/rabbitmq                            	12.6.1       	3.12.11      	RabbitMQ is an open source general-purpose mess...
+bitnami/rabbitmq-cluster-operator           	3.10.7       	2.6.0        	The RabbitMQ Cluster Kubernetes Operator automa...
+bitnami/redis                               	18.6.1       	7.2.3        	Redis(R) is an open source, advanced key-value ...
+bitnami/redis-cluster                       	9.1.4        	7.2.3        	Redis(R) is an open source, scalable, distribut...
+bitnami/redmine                             	26.0.0       	5.1.1        	Redmine is an open source management applicatio...
+bitnami/schema-registry                     	16.2.5       	7.5.2        	Confluent Schema Registry provides a RESTful in...
+bitnami/sealed-secrets                      	1.6.3        	0.24.5       	Sealed Secrets are "one-way" encrypted K8s Secr...
+bitnami/solr                                	8.3.3        	9.4.0        	Apache Solr is an extremely powerful, open sour...
+bitnami/sonarqube                           	4.1.6        	10.3.0       	SonarQube(TM) is an open source quality managem...
+bitnami/spark                               	8.1.6        	3.5.0        	Apache Spark is a high-performance engine for l...
+bitnami/spring-cloud-dataflow               	26.1.0       	2.11.1       	Spring Cloud Data Flow is a microservices-based...
+bitnami/suitecrm                            	14.1.1       	7.13.4       	DEPRECATED SuiteCRM is a completely open source...
+bitnami/supabase                            	2.1.5        	0.23.10      	Supabase is an open source Firebase alternative...
+bitnami/tensorflow-resnet                   	3.10.5       	2.14.1       	TensorFlow ResNet is a client utility for use w...
+bitnami/thanos                              	12.20.1      	0.33.0       	Thanos is a highly available metrics system tha...
+bitnami/tomcat                              	10.11.10     	10.1.17      	Apache Tomcat is an open-source web server desi...
+bitnami/vault                               	0.4.6        	1.15.4       	Vault is a tool for securely managing and acces...
+bitnami/wavefront                           	4.4.3        	1.13.0       	DEPRECATED Wavefront is a high-performance stre...
+bitnami/wavefront-adapter-for-istio         	2.0.6        	0.1.5        	DEPRECATED Wavefront Adapter for Istio is an ad...
+bitnami/wavefront-hpa-adapter               	1.5.2        	0.9.10       	DEPRECATED Wavefront HPA Adapter for Kubernetes...
+bitnami/wavefront-prometheus-storage-adapter	2.3.3        	1.0.7        	DEPRECATED Wavefront Storage Adapter is a Prome...
+bitnami/whereabouts                         	0.5.11       	0.6.2        	Whereabouts is a CNI IPAM plugin for Kubernetes...
+bitnami/wildfly                             	17.1.8       	30.0.1       	Wildfly is a lightweight, open source applicati...
+bitnami/wordpress                           	19.0.3       	6.4.2        	WordPress is the world's most popular blogging ...
+bitnami/wordpress-intel                     	2.1.31       	6.1.1        	DEPRECATED WordPress for Intel is the most popu...
+bitnami/zookeeper                           	12.4.0       	3.9.1        	Apache ZooKeeper provides a reliable, centraliz...
+NAME: mongodb
+LAST DEPLOYED: Fri Dec 22 13:50:40 2023
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+CHART NAME: mongodb
+CHART VERSION: 14.4.5
+APP VERSION: 7.0.4
+
+** Please be patient while the chart is being deployed **
+
+MongoDB&reg; can be accessed on the following DNS name(s) and ports from within your cluster:
+
+    mongodb.default.svc.cluster.local
+
+To get the root password run:
+
+    export MONGODB_ROOT_PASSWORD=$(kubectl get secret --namespace default mongodb -o jsonpath="{.data.mongodb-root-password}" | base64 -d)
+
+To connect to your database, create a MongoDB&reg; client container:
+
+    kubectl run --namespace default mongodb-client --rm --tty -i --restart='Never' --env="MONGODB_ROOT_PASSWORD=$MONGODB_ROOT_PASSWORD" --image docker.io/arm64v8/mongo:latest --command -- bash
+
+Then, run the following command:
+    mongosh admin --host "mongodb" --authenticationDatabase admin -u $MONGODB_ROOT_USER -p $MONGODB_ROOT_PASSWORD
+
+To connect to your database from outside the cluster execute the following commands:
+
+    kubectl port-forward --namespace default svc/mongodb 27017:27017 &
+    mongosh --host 127.0.0.1 --authenticationDatabase admin -p $MONGODB_ROOT_PASSWORD
+NAME   	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART         	APP VERSION
+mongodb	default  	1       	2023-12-22 13:50:40.805971363 +0000 UTC	deployed	mongodb-14.4.5	7.0.4      
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libgoogle-perftools4 libtcmalloc-minimal4 libyaml-cpp0.8 mongo-tools
+The following NEW packages will be installed:
+  libgoogle-perftools4 libtcmalloc-minimal4 libyaml-cpp0.8 mongo-tools
+  mongodb-clients
+0 upgraded, 5 newly installed, 0 to remove and 409 not upgraded.
+Need to get 31.4 MB of archives.
+After this operation, 121 MB of additional disk space will be used.
+Get:1 http://mirror.vinehost.net/kali kali-rolling/main arm64 libtcmalloc-minimal4 arm64 2.13-1 [80.5 kB]
+Get:2 http://mirror.vinehost.net/kali kali-rolling/main arm64 libgoogle-perftools4 arm64 2.13-1 [184 kB]
+Get:3 http://http.kali.org/kali kali-rolling/main arm64 libyaml-cpp0.8 arm64 0.8.0+dfsg-6 [119 kB]
+Get:4 http://http.kali.org/kali kali-rolling/main arm64 mongo-tools arm64 100.9.1+ds1-0kali1 [18.8 MB]
+Get:5 http://mirror.vinehost.net/kali kali-rolling/non-free arm64 mongodb-clients arm64 1:6.1.1-0kali6 [12.2 MB]
+Fetched 31.4 MB in 21s (1,465 kB/s)
+Selecting previously unselected package libtcmalloc-minimal4:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 389849 files and directories currently installed.)
+Preparing to unpack .../libtcmalloc-minimal4_2.13-1_arm64.deb ...
+Unpacking libtcmalloc-minimal4:arm64 (2.13-1) ...
+Selecting previously unselected package libgoogle-perftools4:arm64.
+Preparing to unpack .../libgoogle-perftools4_2.13-1_arm64.deb ...
+Unpacking libgoogle-perftools4:arm64 (2.13-1) ...
+Selecting previously unselected package libyaml-cpp0.8:arm64.
+Preparing to unpack .../libyaml-cpp0.8_0.8.0+dfsg-6_arm64.deb ...
+Unpacking libyaml-cpp0.8:arm64 (0.8.0+dfsg-6) ...
+Selecting previously unselected package mongo-tools.
+Preparing to unpack .../mongo-tools_100.9.1+ds1-0kali1_arm64.deb ...
+Unpacking mongo-tools (100.9.1+ds1-0kali1) ...
+Selecting previously unselected package mongodb-clients.
+Preparing to unpack .../mongodb-clients_1%3a6.1.1-0kali6_arm64.deb ...
+Unpacking mongodb-clients (1:6.1.1-0kali6) ...
+Setting up libyaml-cpp0.8:arm64 (0.8.0+dfsg-6) ...
+Setting up libtcmalloc-minimal4:arm64 (2.13-1) ...
+Setting up mongo-tools (100.9.1+ds1-0kali1) ...
+Setting up libgoogle-perftools4:arm64 (2.13-1) ...
+Setting up mongodb-clients (1:6.1.1-0kali6) ...
+Processing triggers for libc-bin (2.37-12) ...
+Processing triggers for man-db (2.12.0-1) ...
+Processing triggers for kali-menu (2023.4.6) ...
+[?1049h[22;0;0t[1;55r[4l[?25l(B[m[37m[40m[1;55r[H[2J[1;1H[97m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[37mPackage configuration[23;47H[30m[47m┌─────────────────────────────────────────────┤ [31mPending kernel upgrade[30m ├─────────────────────────────────────────────┐[24;47H│                                                                                                                    │[97m[40m [25;47H[30m[47m│ Newer kernel available                                                                                             │[97m[40m [26;47H[30m[47m│                                                                                                                    │[97m[40m [27;47H[30m[47m│ The currently running kernel version is 6.1.64-v8+ which is not the expected kernel version 6.1.64-v8-16k+.        │[97m[40m [28;47H[30m[47m│                                                                                                                    │[97m[40m [29;47H[30m[47m│ Restarting the system to load the new kernel will not be handled automatically, so you should consider rebooting.  │[97m[40m [30;47H[30m[47m│                                                                                                                    │[97m[40m [31;47H[30m[47m│                                                       [37m[41m<Ok>[30m[47m                                                         │[97m[40m [32;47H[30m[47m│                                                                                                                    │[97m[40m [33;47H[30m[47m└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘[97m[40m [34;48H                                                                                                                      [31;104H[?12l[?25h[55;1H[37m(B[m[39;49m[K[?1049l[23;0;0t[?1049h[22;0;0t[1;55r[4l[?25l(B[m[37m[40m[1;55r[H[2J[1;1H[97m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[37mPackage configuration[22;83H[30m[47m┌────┤ [31mDaemons using outdated libraries[30m ├─────┐[23;83H│                                             │[97m[40m [24;83H[30m[47m│                                             │[97m[40m [25;83H[30m[47m│ Which services should be restarted?         │[97m[40m [26;83H[30m[47m│                                             │[97m[40m [27;83H[30m[47m│  [37m[44m[[41m [44m] dbus.service     [30m[47m                      │[97m[40m [28;83H[30m[47m│  [37m[44m[*] systemd-manager  [30m[47m                      │[97m[40m [29;83H[30m[47m│                                             │[97m[40m [30;83H[30m[47m│                                             │[97m[40m [31;83H[30m[47m│          <Ok>              <Cancel>         │[97m[40m [32;83H[30m[47m│                                             │[97m[40m [33;83H[30m[47m└─────────────────────────────────────────────┘[97m[40m [34;84H                                               [27;90H[27;87H[37m[44m [31;94H[41m<Ok>[31;95H[?12l[?25h[55;1H[40m(B[m[39;49m[K[?1049l[23;0;0tNAME                           READY   STATUS    RESTARTS   AGE
+pod/mongodb-7d8f866c7c-6npr6   0/1     Running   0          10m
+
+NAME                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)     AGE
+service/kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP     6h3m
+service/mongodb      ClusterIP   10.105.168.61   <none>        27017/TCP   10m
+
+NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/mongodb   0/1     1            0           10m
+
+NAME                                 DESIRED   CURRENT   READY   AGE
+replicaset.apps/mongodb-7d8f866c7c   1         1         0       10m
+Name:                   mongodb
+Namespace:              default
+CreationTimestamp:      Fri, 22 Dec 2023 13:50:45 +0000
+Labels:                 app.kubernetes.io/component=mongodb
+                        app.kubernetes.io/instance=mongodb
+                        app.kubernetes.io/managed-by=Helm
+                        app.kubernetes.io/name=mongodb
+                        app.kubernetes.io/version=7.0.4
+                        helm.sh/chart=mongodb-14.4.5
+Annotations:            deployment.kubernetes.io/revision: 1
+                        meta.helm.sh/release-name: mongodb
+                        meta.helm.sh/release-namespace: default
+Selector:               app.kubernetes.io/component=mongodb,app.kubernetes.io/instance=mongodb,app.kubernetes.io/name=mongodb
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app.kubernetes.io/component=mongodb
+                    app.kubernetes.io/instance=mongodb
+                    app.kubernetes.io/managed-by=Helm
+                    app.kubernetes.io/name=mongodb
+                    app.kubernetes.io/version=7.0.4
+                    helm.sh/chart=mongodb-14.4.5
+  Service Account:  mongodb
+  Containers:
+   mongodb:
+    Image:           docker.io/arm64v8/mongo:latest
+    Port:            27017/TCP
+    Host Port:       0/TCP
+    SeccompProfile:  RuntimeDefault
+    Liveness:        exec [/bitnami/scripts/ping-mongodb.sh] delay=30s timeout=10s period=20s #success=1 #failure=6
+    Readiness:       exec [/bitnami/scripts/readiness-probe.sh] delay=5s timeout=5s period=10s #success=1 #failure=6
+    Environment:
+      BITNAMI_DEBUG:                    false
+      MONGODB_ROOT_USER:                root
+      MONGODB_ROOT_PASSWORD:            <set to the key 'mongodb-root-password' in secret 'mongodb'>  Optional: false
+      ALLOW_EMPTY_PASSWORD:             no
+      MONGODB_SYSTEM_LOG_VERBOSITY:     0
+      MONGODB_DISABLE_SYSTEM_LOG:       no
+      MONGODB_DISABLE_JAVASCRIPT:       no
+      MONGODB_ENABLE_JOURNAL:           yes
+      MONGODB_PORT_NUMBER:              27017
+      MONGODB_ENABLE_IPV6:              no
+      MONGODB_ENABLE_DIRECTORY_PER_DB:  no
+    Mounts:
+      /bitnami/scripts from common-scripts (rw)
+      /data/db from datadir (rw)
+  Volumes:
+   common-scripts:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      mongodb-common-scripts
+    Optional:  false
+   datadir:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  mongodb
+    ReadOnly:   false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    False   ProgressDeadlineExceeded
+OldReplicaSets:  <none>
+NewReplicaSet:   mongodb-7d8f866c7c (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  10m   deployment-controller  Scaled up replica set mongodb-7d8f866c7c to 1
+MONGO POD IS mongodb-7d8f866c7c-6npr6
+Name:             mongodb-7d8f866c7c-6npr6
+Namespace:        default
+Priority:         0
+Service Account:  mongodb
+Node:             minikube/192.168.49.2
+Start Time:       Fri, 22 Dec 2023 13:50:47 +0000
+Labels:           app.kubernetes.io/component=mongodb
+                  app.kubernetes.io/instance=mongodb
+                  app.kubernetes.io/managed-by=Helm
+                  app.kubernetes.io/name=mongodb
+                  app.kubernetes.io/version=7.0.4
+                  helm.sh/chart=mongodb-14.4.5
+                  pod-template-hash=7d8f866c7c
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.3
+IPs:
+  IP:           10.244.0.3
+Controlled By:  ReplicaSet/mongodb-7d8f866c7c
+Containers:
+  mongodb:
+    Container ID:    docker://e4e70cc726c385d8d2d3c775562d74b11b7f743ce31cbb7a2646d054b9ae2ffb
+    Image:           docker.io/arm64v8/mongo:latest
+    Image ID:        docker-pullable://arm64v8/mongo@sha256:18b3e5ac9906b6b19cad7a255405a9c9fe09de255f2c6d887db7e2c21803e3e9
+    Port:            27017/TCP
+    Host Port:       0/TCP
+    SeccompProfile:  RuntimeDefault
+    State:           Running
+      Started:       Fri, 22 Dec 2023 14:01:32 +0000
+    Ready:           False
+    Restart Count:   0
+    Liveness:        exec [/bitnami/scripts/ping-mongodb.sh] delay=30s timeout=10s period=20s #success=1 #failure=6
+    Readiness:       exec [/bitnami/scripts/readiness-probe.sh] delay=5s timeout=5s period=10s #success=1 #failure=6
+    Environment:
+      BITNAMI_DEBUG:                    false
+      MONGODB_ROOT_USER:                root
+      MONGODB_ROOT_PASSWORD:            <set to the key 'mongodb-root-password' in secret 'mongodb'>  Optional: false
+      ALLOW_EMPTY_PASSWORD:             no
+      MONGODB_SYSTEM_LOG_VERBOSITY:     0
+      MONGODB_DISABLE_SYSTEM_LOG:       no
+      MONGODB_DISABLE_JAVASCRIPT:       no
+      MONGODB_ENABLE_JOURNAL:           yes
+      MONGODB_PORT_NUMBER:              27017
+      MONGODB_ENABLE_IPV6:              no
+      MONGODB_ENABLE_DIRECTORY_PER_DB:  no
+    Mounts:
+      /bitnami/scripts from common-scripts (rw)
+      /data/db from datadir (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-97w2h (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  common-scripts:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      mongodb-common-scripts
+    Optional:  false
+  datadir:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  mongodb
+    ReadOnly:   false
+  kube-api-access-97w2h:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age    From               Message
+  ----     ------     ----   ----               -------
+  Normal   Scheduled  10m    default-scheduler  Successfully assigned default/mongodb-7d8f866c7c-6npr6 to minikube
+  Normal   Pulling    9m40s  kubelet            Pulling image "docker.io/arm64v8/mongo:latest"
+  Normal   Pulled     46s    kubelet            Successfully pulled image "docker.io/arm64v8/mongo:latest" in 6m44.764s (6m44.764s including waiting)
+  Warning  Failed     45s    kubelet            Error: failed to sync secret cache: timed out waiting for the condition
+  Normal   Pulled     30s    kubelet            Container image "docker.io/arm64v8/mongo:latest" already present on machine
+  Normal   Created    10s    kubelet            Created container mongodb
+  Normal   Started    5s     kubelet            Started container mongodb
+{"t":{"$date":"2023-12-22T14:01:32.381+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+{"t":{"$date":"2023-12-22T14:01:32.381+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"main","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":21},"outgoing":{"minWireVersion":6,"maxWireVersion":21},"isInternalClient":true}}}
+{"t":{"$date":"2023-12-22T14:01:32.385+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+{"t":{"$date":"2023-12-22T14:01:32.387+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","namespace":"config.tenantMigrationDonors"}}
+{"t":{"$date":"2023-12-22T14:01:32.387+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","namespace":"config.tenantMigrationRecipients"}}
+{"t":{"$date":"2023-12-22T14:01:32.387+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"main","msg":"Multi threading initialized"}
+{"t":{"$date":"2023-12-22T14:01:32.387+00:00"},"s":"I",  "c":"TENANT_M", "id":7091600, "ctx":"main","msg":"Starting TenantMigrationAccessBlockerRegistry"}
+{"t":{"$date":"2023-12-22T14:01:32.387+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"mongodb-7d8f866c7c-6npr6"}}
+{"t":{"$date":"2023-12-22T14:01:32.388+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"7.0.4","gitVersion":"38f3e37057a43d2e9f41a39142681a76062d582e","openSSLVersion":"OpenSSL 3.0.2 15 Mar 2022","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2204","distarch":"aarch64","target_arch":"aarch64"}}}}
+{"t":{"$date":"2023-12-22T14:01:32.388+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"22.04"}}}
+{"t":{"$date":"2023-12-22T14:01:32.388+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"}}}}
+{"t":{"$date":"2023-12-22T14:01:32.389+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+{"t":{"$date":"2023-12-22T14:01:32.389+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=3459M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],"}}
+{"t":{"$date":"2023-12-22T14:01:34.514+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":2125}}
+{"t":{"$date":"2023-12-22T14:01:34.514+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+{"t":{"$date":"2023-12-22T14:01:35.182+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+{"t":{"$date":"2023-12-22T14:01:35.182+00:00"},"s":"W",  "c":"CONTROL",  "id":5123300, "ctx":"initandlisten","msg":"vm.max_map_count is too low","attr":{"currentValue":65530,"recommendedMinimum":1677720,"maxConns":838860},"tags":["startupWarnings"]}
+{"t":{"$date":"2023-12-22T14:01:35.182+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"admin.system.version","uuidDisposition":"provided","uuid":{"uuid":{"$uuid":"8c595443-4f34-4bc2-bb04-1f9b1a8449b3"}},"options":{"uuid":{"$uuid":"8c595443-4f34-4bc2-bb04-1f9b1a8449b3"}}}}
+{"t":{"$date":"2023-12-22T14:01:35.273+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"8c595443-4f34-4bc2-bb04-1f9b1a8449b3"}},"namespace":"admin.system.version","index":"_id_","ident":"index-1-1299833053104637523","collectionIdent":"collection-0-1299833053104637523","commitTimestamp":null}}
+{"t":{"$date":"2023-12-22T14:01:35.273+00:00"},"s":"I",  "c":"REPL",     "id":20459,   "ctx":"initandlisten","msg":"Setting featureCompatibilityVersion","attr":{"newVersion":"7.0"}}
+{"t":{"$date":"2023-12-22T14:01:35.273+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"7.0","context":"setFCV"}}
+{"t":{"$date":"2023-12-22T14:01:35.274+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":21},"outgoing":{"minWireVersion":6,"maxWireVersion":21},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":21,"maxWireVersion":21},"outgoing":{"minWireVersion":21,"maxWireVersion":21},"isInternalClient":true}}}
+{"t":{"$date":"2023-12-22T14:01:35.274+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":21,"maxWireVersion":21},"outgoing":{"minWireVersion":21,"maxWireVersion":21},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":21},"incomingInternalClient":{"minWireVersion":21,"maxWireVersion":21},"outgoing":{"minWireVersion":21,"maxWireVersion":21},"isInternalClient":true}}}
+{"t":{"$date":"2023-12-22T14:01:35.274+00:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"7.0","context":"startup"}}
+{"t":{"$date":"2023-12-22T14:01:35.274+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+{"t":{"$date":"2023-12-22T14:01:35.274+00:00"},"s":"I",  "c":"CONTROL",  "id":6608200, "ctx":"initandlisten","msg":"Initializing cluster server parameters from disk"}
+{"t":{"$date":"2023-12-22T14:01:35.274+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+{"t":{"$date":"2023-12-22T14:01:35.275+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+{"t":{"$date":"2023-12-22T14:01:35.277+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"local.startup_log","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"9b8696ef-0d87-44e7-add8-9a4d57066085"}},"options":{"capped":true,"size":10485760}}}
+{"t":{"$date":"2023-12-22T14:01:35.366+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"9b8696ef-0d87-44e7-add8-9a4d57066085"}},"namespace":"local.startup_log","index":"_id_","ident":"index-3-1299833053104637523","collectionIdent":"collection-2-1299833053104637523","commitTimestamp":null}}
+{"t":{"$date":"2023-12-22T14:01:35.366+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+{"t":{"$date":"2023-12-22T14:01:35.368+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+{"t":{"$date":"2023-12-22T14:01:35.371+00:00"},"s":"I",  "c":"CONTROL",  "id":20712,   "ctx":"LogicalSessionCacheReap","msg":"Sessions collection is not set up; waiting until next sessions reap interval","attr":{"error":"NamespaceNotFound: config.system.sessions does not exist"}}
+{"t":{"$date":"2023-12-22T14:01:35.371+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"LogicalSessionCacheRefresh","msg":"createCollection","attr":{"namespace":"config.system.sessions","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"7226a4fb-27b7-4b54-a401-acff3dacebe0"}},"options":{}}}
+{"t":{"$date":"2023-12-22T14:01:35.371+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+{"t":{"$date":"2023-12-22T14:01:35.371+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+{"t":{"$date":"2023-12-22T14:01:35.371+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+{"t":{"$date":"2023-12-22T14:01:35.546+00:00"},"s":"I",  "c":"REPL",     "id":7360102, "ctx":"LogicalSessionCacheRefresh","msg":"Added oplog entry for create to transaction","attr":{"namespace":"config.$cmd","uuid":{"uuid":{"$uuid":"7226a4fb-27b7-4b54-a401-acff3dacebe0"}},"object":{"create":"system.sessions","idIndex":{"v":2,"key":{"_id":1},"name":"_id_"}}}}
+{"t":{"$date":"2023-12-22T14:01:35.546+00:00"},"s":"I",  "c":"REPL",     "id":7360100, "ctx":"LogicalSessionCacheRefresh","msg":"Added oplog entry for createIndexes to transaction","attr":{"namespace":"config.$cmd","uuid":{"uuid":{"$uuid":"7226a4fb-27b7-4b54-a401-acff3dacebe0"}},"object":{"createIndexes":"system.sessions","v":2,"key":{"lastUse":1},"name":"lsidTTLIndex","expireAfterSeconds":1800}}}
+{"t":{"$date":"2023-12-22T14:01:36.659+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"7226a4fb-27b7-4b54-a401-acff3dacebe0"}},"namespace":"config.system.sessions","index":"_id_","ident":"index-5-1299833053104637523","collectionIdent":"collection-4-1299833053104637523","commitTimestamp":null}}
+{"t":{"$date":"2023-12-22T14:01:36.660+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"collectionUUID":{"uuid":{"$uuid":"7226a4fb-27b7-4b54-a401-acff3dacebe0"}},"namespace":"config.system.sessions","index":"lsidTTLIndex","ident":"index-6-1299833053104637523","collectionIdent":"collection-4-1299833053104637523","commitTimestamp":null}}
+{"t":{"$date":"2023-12-22T14:01:36.661+00:00"},"s":"I",  "c":"COMMAND",  "id":51803,   "ctx":"LogicalSessionCacheRefresh","msg":"Slow query","attr":{"type":"command","ns":"config.system.sessions","command":{"createIndexes":"system.sessions","v":2,"indexes":[{"key":{"lastUse":1},"name":"lsidTTLIndex","expireAfterSeconds":1800}],"ignoreUnknownIndexOptions":false,"writeConcern":{},"$db":"config"},"numYields":0,"reslen":114,"locks":{"ParallelBatchWriterMode":{"acquireCount":{"r":5}},"FeatureCompatibilityVersion":{"acquireCount":{"r":2,"w":3}},"ReplicationStateTransition":{"acquireCount":{"w":5}},"Global":{"acquireCount":{"r":2,"w":3}},"Database":{"acquireCount":{"r":2,"w":3}},"Collection":{"acquireCount":{"r":2,"w":3}},"Mutex":{"acquireCount":{"r":2}}},"flowControl":{"acquireCount":1},"storage":{},"cpuNanos":12141000,"protocol":"op_msg","durationMillis":1289}}
+😿  service default/mongodb has no node port
+NAME                           READY   STATUS    RESTARTS   AGE
+pod/mongodb-7d8f866c7c-6npr6   0/1     Running   0          10m
+
+NAME                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)     AGE
+service/kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP     6h3m
+service/mongodb      ClusterIP   10.105.168.61   <none>        27017/TCP   10m
+
+NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/mongodb   0/1     1            0           10m
+
+NAME                                 DESIRED   CURRENT   READY   AGE
+replicaset.apps/mongodb-7d8f866c7c   1         1         0       10m
+Forwarding from 127.0.0.1:27017 -> 27017
+Forwarding from [::1]:27017 -> 27017
