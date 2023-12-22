@@ -1,4 +1,3 @@
 #!/bin/bash
 set -xu
-sudo usermod -aG docker $USER 
-sudo newgrp docker
+sudo usermod -aG docker $USER && newgrp docker
