@@ -26,11 +26,11 @@ sudo apt update
 sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg software-properties-common wget vim git w3m kubernetes-helm containerd docker.io
 ```
 
-3. ```
+2. ```
    sudo usermod -aG docker $USER && newgrp docker
    ```
 
-4. $ ./install3.sh | tee install3.log to install minikube
+3. $ ./install3.sh | tee install3.log to install minikube
 
 install3.sh contains
 
