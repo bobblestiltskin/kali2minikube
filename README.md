@@ -13,11 +13,37 @@ The following scripts can be viewed in https://github.com/bobblestiltskin/kali2m
 
 or cloned at https://github.com/bobblestiltskin/kali2minikube
 
-1. run install1.sh e.g. $ ./install1.sh | tee install1.log
+1. run install1.sh
 
-2. $ sudo usermod -aG docker $USER && newgrp docker
+   e.g. $ ./install1.sh | tee install1.log
 
-3. $ ./install3.sh | tee install3.log to install minikube
+  install1.sh contains
+  ```
+#!/bin/bash
+set -xu
+sudo apt update
+sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg software-properties-common wget vim git w3m kubernetes-helm containerd docker.io
+```
+
+3. $ sudo usermod -aG docker $USER && newgrp docker
+
+4. $ ./install3.sh | tee install3.log to install minikube
+  install3.sh contains
+```
+#!/bin/bash
+set -xu
+
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_arm64.deb
+sudo dpkg -i minikube_latest_arm64.deb
+
+echo 'alias kubectl="minikube kubectl --"' >> ${HOME}/.zsh_aliases
+sed -i -f ./update_zshrc.sed ${HOME}/.zshrc
+
+alias kubectl="minikube kubectl --"
+
+minikube start
+minikube status
+```
 
 and then optionally
 
