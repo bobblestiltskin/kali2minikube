@@ -1,0 +1,125 @@
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ minikube status
+minikube
+type: Control Plane
+host: Stopped
+kubelet: Stopped
+apiserver: Stopped
+kubeconfig: Stopped
+
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ minikube start 
+😄  minikube v1.32.0 on Debian kali-rolling (arm64)
+✨  Using the docker driver based on existing profile
+👍  Starting control plane node minikube in cluster minikube
+🚜  Pulling base image ...
+🔄  Restarting existing docker container for "minikube" ...
+🐳  Preparing Kubernetes v1.28.3 on Docker 24.0.7 ...
+🔗  Configuring bridge CNI (Container Networking Interface) ...
+🔎  Verifying Kubernetes components...
+    ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Enabled addons: storage-provisioner, default-storageclass
+💡  kubectl not found. If you need it, try: 'minikube kubectl -- get pods -A'
+🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ minikube status
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ minikube kubectl get all
+NAME                           READY   STATUS    RESTARTS        AGE
+pod/mongodb-7d8f866c7c-6npr6   1/1     Running   1 (6m47s ago)   29m
+
+NAME                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)     AGE
+service/kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP     6h22m
+service/mongodb      ClusterIP   10.105.168.61   <none>        27017/TCP   29m
+
+NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/mongodb   1/1     1            1           29m
+
+NAME                                 DESIRED   CURRENT   READY   AGE
+replicaset.apps/mongodb-7d8f866c7c   1         1         1       29m
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ minikube kubectl describe deployment.apps/mongodb
+
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ ls
+hello.sh  install1.sh  install2.sh  install_mongodb_helm.sh  mongodb.sh  mongo.log  output1.log  output2.log  update_zshrc.sed  usemongodb.cmd
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ cat usemongodb.cmd| mongo
+MongoDB shell version v6.1.1
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Error: couldn't connect to server 127.0.0.1:27017, connection attempt failed: SocketException: Error connecting to 127.0.0.1:27017 :: caused by :: Connection refused :
+connect@src/mongo/shell/mongo.js:380:17
+@(connect):2:6
+exception: connect failed
+exiting with code 1
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ cat mongodb.sh                                    
+#/bin/bash
+set -xu
+./install_mongodb_helm.sh
+
+sudo apt install -y mongodb-clients
+
+minikube kubectl get all
+minikube kubectl describe deployment.apps/mongodb
+
+MONGO_POD=$(minikube kubectl get pods | grep ^mongodb | awk '{print $1}')
+echo MONGO POD IS ${MONGO_POD}
+minikube kubectl describe pod/${MONGO_POD}
+minikube kubectl logs pod/${MONGO_POD}
+
+minikube kubectl expose deployment mongodb --type=NodePort --port=27017
+minikube service mongodb --url
+minikube kubectl port-forward svc/mongodb 27017:27017 &
+minikube kubectl get all
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ minikube kubectl port-forward svc/mongodb 27017:27017 &
+[1] 11843
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ Forwarding from 127.0.0.1:27017 -> 27017
+Forwarding from [::1]:27017 -> 27017
+
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ cat usemongodb.cmd| mongo                              
+MongoDB shell version v6.1.1
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Handling connection for 27017
+Implicit session: session { "id" : UUID("b78edc97-21ce-4069-b5c0-c4316d12b45d") }
+MongoDB server version: 7.0.4
+WARNING: shell and server versions do not match
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+switched to db test
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("65859ba1790a8dd76581be00")
+}
+{ "_id" : ObjectId("65859ba1790a8dd76581be00"), "name" : "deb" }
+bye
+                                                                                                                                                                                                                   
+┌──(kali㉿kali-raspberry-pi5)-[~]
+└─$ 
