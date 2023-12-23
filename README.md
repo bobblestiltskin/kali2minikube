@@ -1,17 +1,7 @@
 # kali2minikube
 Scripts to install minikube and dependencies on a vanilla kali raspberry pi 5 installation (https://www.kali.org/docs/arm/raspberry-pi-5/)
 
-I used
-
-dd if=./new/kali-linux-2023.4-raspberry-pi5-arm64.img of=/dev/sdg bs=64M conv=sync
-
-to install the image to the SD card.
-
-Check for the correct location using lsblk !! - mine was at /dev/sdg.
-
-The following scripts can be viewed in https://github.com/bobblestiltskin/kali2minikube/tree/main/bin  
-
-or cloned at https://github.com/bobblestiltskin/kali2minikube
+The following scripts can cloned at https://github.com/bobblestiltskin/kali2minikube
 
 1. Install some necessary packages.
 
