@@ -13,31 +13,21 @@ The following scripts can be viewed in https://github.com/bobblestiltskin/kali2m
 
 or cloned at https://github.com/bobblestiltskin/kali2minikube
 
-1. run install1.sh
-
-   e.g. $ ./install1.sh | tee install1.log
-
-  install1.sh contains
+1. Install some necessary packages.
 
   ```
-#!/bin/bash
-set -xu
 sudo apt update
 sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg software-properties-common wget vim git w3m kubernetes-helm containerd docker.io
 ```
 
-2. ```
+2. Ensure we have the correct group added.
+    ```
    sudo usermod -aG docker $USER && newgrp docker
    ```
 
-3. $ ./install3.sh | tee install3.log to install minikube
-
-install3.sh contains
+3. Complete the installation.
 
 ```
-#!/bin/bash
-set -xu
-
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_arm64.deb
 sudo dpkg -i minikube_latest_arm64.deb
 
@@ -49,19 +39,17 @@ alias kubectl="minikube kubectl --"
 minikube start
 minikube status
 ```
-
 and then optionally
 
-$ ./mongodb.sh | tee mongodb.log
-
-to install mongodb.
-
-where mongodb.sh contains 
+4. Install mongodb.
+``` 
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm search repo bitnami
+helm install mongodb bitnami/mongodb  --set image.repository=arm64v8/mongo --set image.tag=latest --set persistence.mountPath=/data/db
+helm ls
 ```
-#/bin/bash
-set -xu
-./install_mongodb_helm.sh
-
+and then configure mongo db
+```
 sudo apt install -y mongodb-clients
 
 minikube kubectl get all
@@ -77,14 +65,3 @@ minikube service mongodb --url
 minikube kubectl port-forward svc/mongodb 27017:27017 &
 minikube kubectl get all
 ```
-and the component install_mongodb_helm.sh contains
-``` 
-#/bin/bash
-set -xu
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm search repo bitnami
-helm install mongodb bitnami/mongodb  --set image.repository=arm64v8/mongo --set image.tag=latest --set persistence.mountPath=/data/db
-helm ls
-```
-
-The script, install_mongodb_helm.sh, could be easily changed to install any of the other bitnami packages. 
