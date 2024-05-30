@@ -7,7 +7,7 @@ The following scripts can cloned at https://github.com/bobblestiltskin/kali2mini
 
   ```
 sudo apt update
-sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg software-properties-common wget vim git w3m kubernetes-helm containerd docker.io
+sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg software-properties-common wget vim git w3m kubernetes-helm containerd docker.io docker-compose
 ```
 
 2. Ensure we have the correct group added.
