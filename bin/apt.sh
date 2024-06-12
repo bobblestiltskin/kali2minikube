@@ -10,4 +10,6 @@ sudo usermod -aG docker $USER && newgrp docker
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_arm64.deb
 sudo dpkg -i minikube_latest_arm64.deb
 
+echo 'alias kubectl="minikube kubectl --"' >> .zsh_aliases
+
 minikube start
