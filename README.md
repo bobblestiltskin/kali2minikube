@@ -1,13 +1,56 @@
 # kali2minikube
-I used
+1. Install some necessary packages.
 
-dd if=./new/kali-linux-2023.4-raspberry-pi5-arm64.img of=/dev/sdg bs=64M conv=sync
+  ```
+sudo apt update
+sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg software-properties-common wget vim git w3m kubernetes-helm containerd docker.io docker-compose
+```
 
-to install the image to the SD card. dd is sometimes called 'Disk Destroyer'.
+2. Ensure we have the correct group added.
+    ```
+   sudo usermod -aG docker $USER && newgrp docker
+   ```
 
-I wrote a sort script (apt.sh) to install minikube and dependencies on a vanilla kali raspberry pi 5 installation (https://www.kali.org/docs/arm/raspberry-pi-5/)
+3. Complete the installation.
 
-Also a script (hello.sh) to install hello-minikube and one to install mongodb (mongodb.sh).
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_arm64.deb
+sudo dpkg -i minikube_latest_arm64.deb
+
+echo 'alias kubectl="minikube kubectl --"' >> ${HOME}/.zsh_aliases
+sed -i -f ./update_zshrc.sed ${HOME}/.zshrc
+
+alias kubectl="minikube kubectl --"
+
+minikube start
+minikube status
+```
+and then optionally
+
+4. Install mongodb.
+``` 
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm search repo bitnami
+helm install mongodb bitnami/mongodb  --set image.repository=arm64v8/mongo --set image.tag=latest --set persistence.mountPath=/data/db
+helm ls
+```
+and then configure mongo db
+```
+sudo apt install -y mongodb-clients
+
+minikube kubectl get all
+minikube kubectl describe deployment.apps/mongodb
+
+MONGO_POD=$(minikube kubectl get pods | grep ^mongodb | awk '{print $1}')
+echo MONGO POD IS ${MONGO_POD}
+minikube kubectl describe pod/${MONGO_POD}
+minikube kubectl logs pod/${MONGO_POD}
+
+minikube kubectl expose deployment mongodb --type=NodePort --port=27017
+minikube service mongodb --url
+minikube kubectl port-forward svc/mongodb 27017:27017 &
+minikube kubectl get all
+```
 
 I abandandoned the use of minikube recently because of https://github.com/kubernetes/minikube/issues/18231
 
